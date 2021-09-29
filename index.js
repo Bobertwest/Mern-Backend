@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 
 //Puerto de la app
-const PORT = process.env.PORT || 4000;
+const port = process.env.port || 4000;
 
 //Conectar Base de datos
 conectarDB();
@@ -24,6 +24,6 @@ app.use("/api/proyectos", require("./routes/proyecto"));
 app.use("/api/tareas", require("./routes/tareas"));
 
 //Arrancar la app
-app.listen(PORT, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`El servidor esta corriendo en el puerto numero: ${PORT}`);
 });
