@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 
 //Puerto de la app
-const port = process.env.port || 4000;
+const port = process.env.port || 8000;
 const host = process.env.host || "0.0.0.0";
 
 //Conectar Base de datos
